@@ -1,0 +1,395 @@
+.light,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300 !important;
+}
+.normal {
+  font-weight: 400 !important;
+}
+.medium {
+  font-weight: 500 !important;
+}
+@media screen and (min-width: 768px) {
+  .size-2x {
+    font-size: 2em !important;
+  }
+  .size-3x {
+    font-size: 3em !important;
+  }
+  .size-4x {
+    font-size: 4em !important;
+  }
+  .size-8x {
+    font-size: 8em !important;
+  }
+  .size-9x {
+    font-size: 9em !important;
+  }
+  .size-10x {
+    font-size: 10em !important;
+  }
+}
+.size-4x {
+  font-size: 2.5em;
+}
+.size-8x {
+  font-size: 3.5em;
+}
+.size-10x {
+  font-size: 4.5em;
+}
+.tenth {
+  min-height: 10% !important;
+}
+.fifth {
+  min-height: 20% !important;
+}
+.quarter {
+  min-height: 25% !important;
+}
+.third {
+  min-height: 33.333333333333336% !important;
+}
+.half {
+  min-height: 50% !important;
+}
+.themeColor {
+  color: #2196f3 !important;
+}
+/* //g
+.fa-mobile-phone
+  text-shadow 0px 0px 3px white
+  transition all 0.3s
+  &:hover
+    text-shadow 0px 0px 20px white
+*/
+.fa-mobile-phone {
+  transition: all 0.3s;
+}
+.fa-mobile-phone:hover {
+  color: #37a1f4 !important;
+}
+.btn-custom {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-custom:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-custom-inverse {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-custom-inverse:hover {
+  background: #fff;
+  color: #000;
+}
+.form-control {
+  border-radius: 0;
+}
+.bg-light {
+  background: #eee !important;
+  color: #333 !important;
+}
+/*
+in the styles, I sometimes comment things out with //g
+that just means i'm changing the look from the original
+to make it look more like griffin tech
+
+In addition, added styles which are appended with //g done for the reasons above
+*/
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.navbar {
+  background: transparent;
+  min-height: 70px;
+  height: 70px;
+  transition: all 0.3s;
+}
+.navbar .navbar-header .navbar-brand {
+  color: #eee;
+  font-size: 30px;
+  line-height: 40px;
+}
+.navbar .navbar-header .navbar-toggle {
+  border: 0;
+  border-radius: 0;
+  margin-top: 19px;
+  margin-bottom: 19px;
+/*
+      &:hover > .icon-bar:nth-child(1)
+        transform(rotate(360deg))
+      &:hover > .icon-bar:nth-child(2)
+        transform(translate(-50px))
+        opacity: 0
+      &:hover > .icon-bar:nth-child(3)
+        transform(rotate(-360deg))
+      */
+}
+.navbar .navbar-header .navbar-toggle > .icon-bar {
+  transition: all 0.3s;
+}
+.navbar .navbar-header .navbar-toggle:hover > .icon-bar {
+  opacity: 0.5;
+}
+.navbar .navbar-header .navbar-toggle:hover,
+.navbar .navbar-header .navbar-toggle:focus {
+  background-color: initial;
+}
+.navbar .navbar-nav {
+  min-height: 70px;
+}
+.navbar .navbar-nav > li > a {
+  height: 70px;
+  color: #eee;
+  line-height: 40px;
+  font-size: 16px;
+}
+.navbar .navbar-nav > li > a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background: #e7e7e7;
+  margin-top: -5px;
+  transition: all 0.3s;
+}
+.navbar .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.navbar .navbar-nav > li > a:hover::after {
+  width: 100%;
+}
+.overlay {
+  z-index: 9998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: none;
+}
+.sidebar-menu {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.sidebar-menu.open {
+  margin-right: 0px;
+}
+.sidebar-menu ul {
+  width: 100%;
+  padding: 0;
+  padding-top: 15px;
+  list-style-type: none;
+}
+.sidebar-menu ul > li {
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.sidebar-menu ul > li:hover,
+.sidebar-menu ul > li.active {
+  background: #eee;
+}
+.sidebar-menu ul > li > a {
+  color: #888;
+  text-decoration: none;
+}
+.jumbotron,
+.container {
+  min-height: 100%;
+}
+.jumbotron {
+  margin-bottom: 0;
+  padding-top: 110px;
+}
+.jumbotron#clouds,
+.jumbotron#info-home,
+.jumbotron#when {
+  color: #333;
+/* //g
+    background: linear-gradient(
+                  rgba(255,255,255,0.7),
+                  rgba(255,255,255,0.7)
+                ),
+                url('//i.imgur.com/7p9mAiT.jpg');
+              */
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("//i.imgur.com/iyhn0fG.jpg");
+  background-size: cover;
+}
+.jumbotron#clouds .down-arrow,
+.jumbotron#info-home .down-arrow,
+.jumbotron#when .down-arrow {
+  color: #333;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron#clouds,
+  .jumbotron#info-home,
+  .jumbotron#when {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+.jumbotron.contact form textarea {
+  resize: none;
+  width: 100%;
+}
+.jumbotron:nth-child(even) {
+  color: #fff;
+/* //g
+    background: linear-gradient(
+                  rgba(0,0,0,0.4),
+                  rgba(0,0,0,0.25)
+                ),
+                url('//i.imgur.com/6bCjQbU.jpg');
+    */
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25)), url("//i.imgur.com/mUjQWvE.jpg");
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron:nth-child(even) {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+.jumbotron.footer {
+  color: #eee;
+  padding-top: 15px;
+  padding-bottom: 0;
+  min-height: 0;
+  background: #111;
+}
+.jumbotron.footer p {
+  font-size: 1em;
+}
+.jumbotron.footer .container:nth-child(1) {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.jumbotron.footer .container:nth-child(1) .footer-nav a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+  .jumbotron.footer .container:nth-child(1) .social-media {
+    text-align: center !important;
+  }
+}
+.jumbotron.footer .container:nth-child(1) a {
+  color: #888;
+}
+.jumbotron.footer .container:nth-child(1) a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.jumbotron.footer .container:nth-child(1) .fb,
+.jumbotron.footer .container:nth-child(1) .ig,
+.jumbotron.footer .container:nth-child(1) .tw {
+  font-size: 1.5em;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin: 15px;
+  padding: 0;
+  color: #ddd;
+}
+.jumbotron.footer .container:nth-child(1) .fb:hover {
+  color: #3b5998;
+}
+.jumbotron.footer .container:nth-child(1) .ig:hover {
+  color: #517fa4;
+}
+.jumbotron.footer .container:nth-child(1) .tw:hover {
+  color: #00aced;
+}
+.jumbotron.footer .container-fluid:nth-child(2) {
+  background: #080808;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+@media screen and (max-width: 767px) {
+  .jumbotron.footer .container-fluid:nth-child(2) {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .jumbotron.footer .container-fluid:nth-child(2) .copyright {
+    text-align: center !important;
+  }
+}
+.jumbotron.footer .container-fluid:nth-child(2) p {
+  margin-bottom: 0;
+  color: #888;
+}
+.jumbotron.footer .container-fluid:nth-child(2) .leungenterprises-container {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .jumbotron.footer .container-fluid:nth-child(2) .leungenterprises-container {
+    text-align: center;
+  }
+}
+.jumbotron.footer .container-fluid:nth-child(2) .leungenterprises,
+.jumbotron.footer .container-fluid:nth-child(2) .company-name {
+  color: #ddd;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron.footer .container-fluid:nth-child(2) .leungenterprises:hover,
+  .jumbotron.footer .container-fluid:nth-child(2) .company-name:hover {
+    font-size: 20px;
+  }
+}
+.btn {
+  font-weight: 300;
+  border-radius: 0;
+}
+.btn.btn-default {
+  background: transparent;
+  border: 2px solid #333;
+  color: #333;
+  transition: all 0.3s;
+}
+.btn.btn-default:hover {
+  background: transparent;
+  border: 2px solid #2196f3;
+  color: #2196f3;
+}
+.input-group-btn .btn-success {
+  background: #5cb85c;
+}
+.down-arrow {
+  color: #fff;
+  font-size: 63px;
+  font-weight: 300;
+}
+.down-arrow:hover,
+.down-arrow:focus {
+  color: #fff;
+}
